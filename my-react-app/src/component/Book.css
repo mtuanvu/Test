@@ -1,0 +1,187 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+.Container {
+  display: flex;
+  flex-direction: column;
+  max-width: 50%;
+  margin: 20px auto;
+  justify-content: center;
+  gap: 25px;
+}
+
+/* ===============Search============== */
+.Search {
+  max-width: 100%;
+  display: flex;
+  min-height: 100%;
+  position: relative;
+}
+.Search input {
+  width: 100%;
+  height: 30px;
+  padding-left: 40px;
+  font-size: 16px;
+  border-radius: 3px;
+  border: thin solid rgb(182, 182, 182);
+  outline: none;
+}
+
+.Search i {
+  position: absolute;
+  font-size: 18px;
+  padding-top: 5px;
+  padding-left: 10px;
+  width: 5%;
+  height: 100%;
+  border: thin solid rgb(197, 197, 197);
+  background-color: rgb(220, 218, 218);
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+/* ===============List============== */
+.List-item-book {
+  max-width: 100%;
+  height: 350px;
+  overflow-y: scroll;
+  border: thin solid rgb(197, 197, 197);
+
+  padding-top: 0px;
+  border-radius: 4px;
+}
+.List-book h1 {
+  font-size: 28px;
+  font-weight: 300;
+}
+
+.List-book ul li {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style: none;
+  padding: 10px;
+  border-bottom: 1px solid rgb(199, 199, 199);
+}
+
+.List-book-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.List-book-left {
+  max-width: 45%;
+  word-break: break-all;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
+  font-size: 16px;
+}
+
+.List-book-right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  max-width: 50%;
+  height: auto;
+  word-break: break-word;
+  overflow: hidden;
+  font-size: 16px;
+}
+.Authors {
+  background-color: gray;
+  color: white;
+  border-radius: 6px;
+  padding: 2px;
+}
+
+.List-book-right .Delete {
+  margin-left: 10px;
+  margin-top: 4px;
+  font-size: 20px;
+  flex-shrink: 0;
+  color: rgb(137, 137, 137);
+  cursor: pointer;
+}
+
+/*==============sort============ */
+.List-book button {
+  margin-top: 20px;
+  width: 100%;
+  height: 30px;
+  border-radius: 3px;
+  font-size: 15px;
+  cursor: pointer;
+  border: thin solid gray;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 5px;
+}
+
+/* ===============Add-book======== */
+.Add-book {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.Add-book h1 {
+  font-size: 28px;
+  font-weight: 500;
+}
+.Add-book-title {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0px;
+}
+.Add-book-title input {
+  width: 100%;
+  outline: none;
+
+  height: 30px;
+}
+
+.Add-book-author {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0px;
+}
+.Add-book-author input {
+  outline: none;
+  height: 30px;
+}
+.Add-book-favorite {
+  display: flex;
+  justify-content: space-between;
+}
+.Add-book-favorite label {
+  display: flex;
+}
+.Add-book-favorite p {
+  margin-top: 7px;
+}
+.Add-book-favorite label input {
+  margin-left: 5px;
+  flex-shrink: 0;
+}
+.Add-book-favorite button {
+  width: 55px;
+  height: 35px;
+  border-radius: 3px;
+  outline: none;
+  border: none;
+  font-size: 15px;
+  color: white;
+  cursor: pointer;
+  background-color: rgb(64, 180, 64);
+}
+.Add-book-favorite button i {
+  margin-right: 3px;
+}
